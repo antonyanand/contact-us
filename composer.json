@@ -1,0 +1,19 @@
+{
+    "name": "tony/contact",
+    "description": "It is a contact us page with mailable",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antony Anand",
+            "email": "tony@processdrive.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Contacts\\": "src/"
+        }
+    }
+}
