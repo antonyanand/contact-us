@@ -27,8 +27,9 @@ class ContactController extends Controller
      */
     public function store()
     {
+
+        Contact::create(request()->all());
         Mail::to(config('contact.send_mail_to'))->send(new ContactConfirm(request()->get('message')));
-        return Contact::create(request()->all());
     }
 
 }
